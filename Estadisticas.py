@@ -6,13 +6,12 @@ class Estadisticas:
             numeros = cadena.split(",")
 
             minimo = int(numeros[0])
+            maximo = int(numeros[0])
             for num in numeros:
                 if (int(num) < minimo):
                     minimo = int(num)
-
-            maximo = int(numeros[0])
-            if( int(numeros[1]) > maximo ):
-                maximo = int(numeros[1])
+                if (maximo < int(num)):
+                    maximo = int(num)
 
             return [len(numeros), minimo, maximo]
         else:
