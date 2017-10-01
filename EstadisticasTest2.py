@@ -7,3 +7,6 @@ class EstadisticasTest2(TestCase):
 
     def test_calcularUnNumero(self):
         self.assertEqual(Estadisticas().calcular("11"), [1, 11], "Un Numero Iter 2")
+
+    def test_calcularDosNumeros(self):
+        self.assertEqual(Estadisticas().calcular("11,5"), [2, 5], "Dos Numero Iter 2")
