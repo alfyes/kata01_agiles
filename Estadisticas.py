@@ -7,12 +7,13 @@ class Estadisticas:
 
             minimo = int(numeros[0])
             maximo = int(numeros[0])
+            promedio = (int(numeros[0]) + int(numeros[1])) / 2
             for num in numeros:
                 if (int(num) < minimo):
                     minimo = int(num)
                 if (maximo < int(num)):
                     maximo = int(num)
 
-            return [len(numeros), minimo, maximo]
+            return [len(numeros), minimo, maximo, promedio]
         else:
             return [1, int(cadena), int(cadena), int(cadena)]
