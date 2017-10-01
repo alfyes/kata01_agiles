@@ -1,7 +1,7 @@
 class Estadisticas:
     def calcular(self, cadena):
         if cadena == "":
-            return [0, None]
+            return [0, None, None]
         elif "," in cadena:
             numeros = cadena.split(",")
 
