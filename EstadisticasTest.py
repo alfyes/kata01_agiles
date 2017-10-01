@@ -11,3 +11,6 @@ class EstadisticasTestCadenaVacia(TestCase):
 
     def test_calcularDosNumero(self):
         self.assertEqual(Estadisticas().calcular("1,2"), [2], "Dos Numeros")
+
+    def test_calcularMultiplesNumeros(self):
+        self.assertEqual(Estadisticas().calcular("1,2,5,7"), [4], "Multiples Numeros")
