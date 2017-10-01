@@ -10,3 +10,6 @@ class EstadisticasTest4(TestCase):
 
     def test_calcularDosNumeros(self):
         self.assertEqual(Estadisticas().calcular("11,5"), [2, 5, 11, 8], "Dos Numeros Iter 4")
+
+    def test_calcularMultiplesNumeros(self):
+        self.assertEqual(Estadisticas().calcular("11,5,27,2"), [4, 2, 27, 45/4], "Multiples Numeros Iter 4")
