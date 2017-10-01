@@ -10,6 +10,10 @@ class Estadisticas:
                 if (int(num) < minimo):
                     minimo = int(num)
 
-            return [len(numeros), minimo]
+            maximo = int(numeros[0])
+            if( int(numeros[1]) > maximo ):
+                maximo = int(numeros[1])
+
+            return [len(numeros), minimo, maximo]
         else:
             return [1, int(cadena), int(cadena)]
