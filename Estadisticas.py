@@ -15,4 +15,4 @@ class Estadisticas:
 
             return [len(numeros), minimo, maximo]
         else:
-            return [1, int(cadena), int(cadena)]
+            return [1, int(cadena), int(cadena), int(cadena)]
