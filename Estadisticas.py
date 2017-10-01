@@ -4,6 +4,9 @@ class Estadisticas:
             return [0, None]
         elif "," in cadena:
             numeros = cadena.split(",")
-            return [len(numeros)]
+            if(int(numeros[0]) <= int(numeros[1])):
+                return [len(numeros), int(numeros[0])]
+            else:
+                return [len(numeros), int(numeros[1])]
         else:
             return [1, int(cadena)]
