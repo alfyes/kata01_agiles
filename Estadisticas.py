@@ -9,11 +9,12 @@ class Estadisticas:
             maximo = int(numeros[0])
             promedio = 0
             for num in numeros:
-                if (int(num) < minimo):
-                    minimo = int(num)
-                if (maximo < int(num)):
-                    maximo = int(num)
-                promedio += int(num)
+                inum = int(num)
+                if (inum < minimo):
+                    minimo = inum
+                if (maximo < inum):
+                    maximo = inum
+                promedio += inum
 
             promedio /= len(numeros)
 
